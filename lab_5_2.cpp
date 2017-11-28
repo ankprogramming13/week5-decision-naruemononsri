@@ -3,20 +3,26 @@
 
 using namespace std;
 
-int main() {
+int main ()
+{
+    // ประกาศตัวแปรชื่อ
+    string name1, name2;
 
-    string name1;
-
-    // รับชื่อ
-    cout << "Enter Your name: ";
+    // รับชื่อที่ 1
+    cout << "Enter the first name: ";
     cin >> name1;
 
-    // แสดงชื่อ โดยตัดให้เหลือแค่ 10 ตัวอักษร
-    if (name1.length() > 10) {
-        cout << "Your name is too long!!!!" << endl;
-        name1.erase (name1.begin()+10, name1.end());
-        cout << "Your name has been changed to " << name1 << endl;
+    // รับชื่อที่ 2
+    cout << "Enter the second name: ";
+    cin >> name2;
+
+    if (name1== name2){cout << "The two names are equal" << endl;
+    }else {cout << "The two names are not equal" << endl;
     }
+
+    // เขียนเงื่อนไขให้ถูกต้องซะ หนูๆ
+
+
 
     return 0;
 }
